@@ -1,0 +1,79 @@
+{
+ "autoname": "PAGO-.DD.-.MM.-.YYYY.-.######",
+ "creation": "2019-10-29 17:52:15.688855",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fecha_de_pago",
+  "cliente",
+  "id_de_impuesto",
+  "monto_pagado"
+ ],
+ "fields": [
+  {
+   "fieldname": "fecha_de_pago",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Fecha de pago"
+  },
+  {
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Cliente",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "monto_pagado",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Monto Pagado"
+  },
+  {
+   "fieldname": "id_de_impuesto",
+   "fieldtype": "Data",
+   "label": "ID de Impuesto",
+   "options": "Customer.tax_id"
+  }
+ ],
+ "modified": "2019-10-29 19:12:19.437662",
+ "modified_by": "Administrator",
+ "module": "Solicitud De Prestamos",
+ "name": "Pagos",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Prestamista",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}

@@ -1,0 +1,97 @@
+{
+ "autoname": "PREST-.DD.-.MM.-.YYYY.-.######",
+ "creation": "2019-10-29 19:20:03.652322",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cliente",
+  "rnc",
+  "column_break_4",
+  "cantidad_solicitada",
+  "cantidad_aprobada",
+  "amended_from",
+  "desembolso",
+  "id_de_desembolso",
+  "porcentaje"
+ ],
+ "fields": [
+  {
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "label": "Cliente",
+   "options": "Customer"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "cliente.tax_id",
+   "fieldname": "rnc",
+   "fieldtype": "Read Only",
+   "label": "RNC"
+  },
+  {
+   "fieldname": "cantidad_solicitada",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cantidad Solicitada"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cantidad_aprobada",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cantidad Aprobada"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Solicitud de Capital",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "desembolso",
+   "fieldtype": "Link",
+   "label": "Desembolso",
+   "options": "Desembolsos"
+  },
+  {
+   "fieldname": "id_de_desembolso",
+   "fieldtype": "Data",
+   "label": "ID de Desembolso"
+  },
+  {
+   "fieldname": "porcentaje",
+   "fieldtype": "Percent",
+   "label": "Porcentaje"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2019-11-01 23:44:11.893650",
+ "modified_by": "Administrator",
+ "module": "Solicitud De Prestamos",
+ "name": "Solicitud de Capital",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_seen": 1
+}

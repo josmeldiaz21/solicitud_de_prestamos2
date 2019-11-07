@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include solicitud_de_prestamos *.css
+recursive-include solicitud_de_prestamos *.csv
+recursive-include solicitud_de_prestamos *.html
+recursive-include solicitud_de_prestamos *.ico
+recursive-include solicitud_de_prestamos *.js
+recursive-include solicitud_de_prestamos *.json
+recursive-include solicitud_de_prestamos *.md
+recursive-include solicitud_de_prestamos *.png
+recursive-include solicitud_de_prestamos *.py
+recursive-include solicitud_de_prestamos *.svg
+recursive-include solicitud_de_prestamos *.txt
+recursive-exclude solicitud_de_prestamos *.pyc
